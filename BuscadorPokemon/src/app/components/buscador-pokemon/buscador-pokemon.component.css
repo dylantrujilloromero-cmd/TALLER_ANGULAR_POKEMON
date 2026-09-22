@@ -216,6 +216,21 @@
   color: #facc15;
 }
 
+.type-tag.fire {
+  background: rgba(248, 113, 113, 0.18);
+  color: #f87171;
+}
+
+.type-tag.grass {
+  background: rgba(74, 222, 128, 0.18);
+  color: #4ade80;
+}
+
+.type-tag.water {
+  background: rgba(96, 165, 250, 0.18);
+  color: #60a5fa;
+}
+
 .number {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 600;

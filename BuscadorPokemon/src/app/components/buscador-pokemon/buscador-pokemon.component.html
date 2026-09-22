@@ -7,10 +7,12 @@
     <div class="search-box" role="search">
       <input
         type="text"
+        [(ngModel)]="busqueda"
+        (keyup.enter)="buscarPokemon()"
         placeholder="Ej: Pikachu, Charmander, Bulbasaur"
         aria-label="Buscar Pokémon"
       />
-      <button type="button">Buscar</button>
+      <button type="button" (click)="buscarPokemon()">Buscar</button>
     </div>
   </div>
 
@@ -19,33 +21,33 @@
       <div class="pokeball">
         <span class="pokeball-center"></span>
       </div>
-      <div class="pokemon-avatar">⚡</div>
+      <div class="pokemon-avatar">{{ pokemonActual.avatar }}</div>
     </div>
 
     <div class="pokemon-info">
       <div class="meta-row">
-        <span class="type-tag electric">Eléctrico</span>
-        <span class="number">#025</span>
+        <span class="type-tag {{ pokemonActual.tipoClase }}">{{ pokemonActual.tipo }}</span>
+        <span class="number">{{ pokemonActual.numero }}</span>
       </div>
 
-      <h3>Pikachu</h3>
+      <h3>{{ pokemonActual.nombre }}</h3>
 
       <div class="stats-grid">
         <div>
           <span>HP</span>
-          <strong>35</strong>
+          <strong>{{ pokemonActual.hp }}</strong>
         </div>
         <div>
           <span>Ataque</span>
-          <strong>55</strong>
+          <strong>{{ pokemonActual.ataque }}</strong>
         </div>
         <div>
           <span>Defensa</span>
-          <strong>40</strong>
+          <strong>{{ pokemonActual.defensa }}</strong>
         </div>
         <div>
           <span>Velocidad</span>
-          <strong>90</strong>
+          <strong>{{ pokemonActual.velocidad }}</strong>
         </div>
       </div>
 
