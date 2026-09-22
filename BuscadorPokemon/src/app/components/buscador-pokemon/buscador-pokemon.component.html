@@ -1,1 +1,55 @@
-<p>buscador-pokemon works!</p>
+<section class="pokemon-search">
+  <div class="search-panel">
+    <p class="eyebrow">Pokédex</p>
+    <h2>Busca tu Pokémon favorito</h2>
+    <p class="subtitle">Descubre su tipo, habilidades y estadísticas en un solo lugar.</p>
+
+    <div class="search-box" role="search">
+      <input
+        type="text"
+        placeholder="Ej: Pikachu, Charmander, Bulbasaur"
+        aria-label="Buscar Pokémon"
+      />
+      <button type="button">Buscar</button>
+    </div>
+  </div>
+
+  <article class="pokemon-card" aria-label="Resultado del Pokémon buscado">
+    <div class="pokemon-visual">
+      <div class="pokeball">
+        <span class="pokeball-center"></span>
+      </div>
+      <div class="pokemon-avatar">⚡</div>
+    </div>
+
+    <div class="pokemon-info">
+      <div class="meta-row">
+        <span class="type-tag electric">Eléctrico</span>
+        <span class="number">#025</span>
+      </div>
+
+      <h3>Pikachu</h3>
+
+      <div class="stats-grid">
+        <div>
+          <span>HP</span>
+          <strong>35</strong>
+        </div>
+        <div>
+          <span>Ataque</span>
+          <strong>55</strong>
+        </div>
+        <div>
+          <span>Defensa</span>
+          <strong>40</strong>
+        </div>
+        <div>
+          <span>Velocidad</span>
+          <strong>90</strong>
+        </div>
+      </div>
+
+      <button type="button" class="details-button">Ver detalles</button>
+    </div>
+  </article>
+</section>
